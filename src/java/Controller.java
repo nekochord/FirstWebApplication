@@ -51,8 +51,7 @@ public class Controller extends HttpServlet {
         String letter=request.getParameter("letter");
         String answer=hello.getMap(letter);
         request.setAttribute("answer", answer);
-        processRequest(request, response);
-        request.getRequestDispatcher("/test.jsp").forward(request, response);
+        request.getRequestDispatcher("/testjsp.jsp").forward(request, response);
     }
 
     /**
